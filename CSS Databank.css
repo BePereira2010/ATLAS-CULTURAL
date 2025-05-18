@@ -1,0 +1,45 @@
+/* CSS is an acronym for "Cascading Style Sheets". CSS is used to give HTML documents style and flair.*/
+/* CSS operates closely with HTML, not independently.*/
+/* There are three main ways through which one may apply CSS to their HTML Document:*/
+
+/* 1- Inline Application: When CSS properties are applied directly in another attribute within an HTML document. Although convenient, this can lead to some mess-ups due to a gradual disorganization of the document*/
+/* Example: <h1 style = color: [Content]; background color: [Content];></h1>. Although many properties can be applied to one inline application of CSS properties, they must be separated y semicolons.
+
+/* 2- Internal Application: A style sheet written in CSS is built in the "head" segment of your HTML document, serving to define the properties of your document more separately*/
+/* Example: <!DOCTYPE: HTML>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IBCDA MVP</title>
+                <style>
+                    body{
+                (in this context, body is the selected element subject to alteration by CSS. Any other broad element can be chosen)
+                    {
+                (To open the given property, and close it, one must use curly brackets, as demonstrated. Any properties must be applied between the two)
+                <style>
+            <head>
+            <body>
+            lorem
+            </body>
+            </html>
+
+/* External Application and Inter-Document Association: A style sheet is written in a separate text file, however, it remains capable of interacting with an HTML document through a specific code structure which bonds the two together.*/
+/* Specific items can be tagged with "ids" (identification tags) for selection within the "styles.css" document*/
+/* Example: (Within an HTML document)
+            <!DOCTYPE: HTML>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IBCDA MVP</title>
+                <link rel="stylesheet" href="/IBCDA project/styles.css>
+            (Within a CSS document attached to the HTML document)
+            body{
+            (once more, curly brackets are employed)}*/
+
+/* This document will be an External Stlye Sheet to the IBCDA MVP*/
+body{
+background-color:rgb(250,222,110);
+
+}
