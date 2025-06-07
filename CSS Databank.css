@@ -1,0 +1,468 @@
+/* CSS is an acronym for "Cascading Style Sheets". CSS is used to give HTML documents style and flair.*/
+/* CSS operates closely with HTML, not independently.*/
+/* There are three main ways through which one may apply CSS to their HTML Document:*/
+
+/* 1- Inline Application: When CSS properties are applied directly in another attribute within an HTML document. Although convenient, this can lead to some mess-ups due to a gradual disorganization of the document*/
+/* Example: <h1 style = color: [Content]; background color: [Content];></h1>. Although many properties can be applied to one inline application of CSS properties, they must be separated y semicolons.
+
+/* 2- Internal Application: A style sheet written in CSS is built in the "head" segment of your HTML document, serving to define the properties of your document more separately*/
+/* Example: <!DOCTYPE: HTML>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IBCDA MVP</title>
+                <style>
+                    body{
+                (in this context, body is the selected element subject to alteration by CSS. Any other broad element can be chosen)
+                    {
+                (To open the given property, and close it, one must use curly brackets, as demonstrated. Any properties must be applied between the two)
+                <style>
+            <head>
+            <body>
+            lorem
+            </body>
+            </html>
+
+/* External Application and Inter-Document Association: A style sheet is written in a separate text file, however, it remains capable of interacting with an HTML document through a specific code structure which bonds the two together.*/
+/* Specific items can be tagged with "ids" (identification tags) for selection within the "styles.css" document*/
+/* Example: (Within an HTML document)
+            <!DOCTYPE: HTML>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>IBCDA MVP</title>
+                <link rel="stylesheet" href="/IBCDA project/styles.css>
+            (Within a CSS document attached to the HTML document)
+            body{
+            (once more, curly brackets are employed)}*/
+
+/* This document will be an External Stlye Sheet to the IBCDA MVP*/
+body{
+    background-color: rgb(138, 141, 137);
+
+}
+/* The body element is the broadest element in an HTML document, and thus, it is the first to be selected. The background color of the entire document will be set to a dark green color.*/
+/* The following is an example on how to select a specific element within the body of an HTML document through the usage of "id" identification*/
+#alpha {
+    color: white;
+}
+
+/* The following is a demonstration on how to utilize fonts in CSS coding.*/
+/* Fonts in CSS are selected through the "font-family" property, which can be applied to any element in an HTML document.*/
+/* Fonts are highly customizable, and can be selected from a wide variety of sources. One might seek to use "google fonts", where fonts can be acquired and applied on to code for free.*/
+/* Generally speaking, it is good practice to select a font that is widely available on most devices, such as "Arial", "Times New Roman", or "Courier New", due to the possibility that more specific fonts might not be supported by a given browser.*/
+/* Fonts can be applied to any text element through a CSS Stylesheet by employing the "font-family" property, as demonstrated below.*/
+#alpha {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Furthermore, fonts can also be customized through the "font-size" property, which can be applied to any text element in an HTML document.*/
+#alpha {
+    font-size: 20px;
+}
+/* And fonts can also be set to "italic" or "bold" through the "font-style" and "font-weight" properties, respectively. Text decorations can also be used.*/
+#alpha {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+/* The following is a demonstration on how to properly employ borders in CSS coding, with text.*/
+/* Borders can be applied to any element in an HTML document, and can be customized through the "border" property.*/
+/* The text segment that will be subject to the application of the border will be the paragraph tagged with "beta"*/
+#beta {
+    border-style: outset;
+    background-color: white;
+}
+/* The border can be customized through the usage of further properties, such as "border-color", "border-width", and "border-radius", which will all be demonstrated below.*/
+#beta {
+    border-color: blue;
+    border-width: 10px;
+    border-radius: 5px;
+}
+/* Specific sides of the border can also be customized through the usage of "border-top", "border-right", "border-bottom", and "border-left" properties, which will all be demonstrated below, with the paragraph tagged with the id "gamma"*/
+#gamma {
+    background-color: rgb(218, 163, 15);
+    border-top: 5px solid red;
+    border-right: 5px solid green;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid yellow;
+    border-radius: 5px;
+}
+/* The "radius" property is used to "round out" the corners of the border, and can be applied to any element in an HTML document.*/
+/* See how different regions are selected and can have multiple properties applied to them?*/
+/* In the code above, both the intensity (dimensions in pixels), style of border, and border color are all simultaneously selected by simply selecting a region.*/
+
+/*The following is a demonstration on how to properly employ gradients and backgrounds in CSS coding.*/
+/* Gradients can be applied to any textual element in an HTML document through a CSS stlysheet by virtue of the "background" property.*/
+#delta {
+    background: linear-gradient(to right, red, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-size: 20px;
+}
+/* In the given example, the "background" property is used to create a linear gradient that transitions from red to yellow.*/
+/* The "background-repeat" property is used to prevent the background from repeating, and the "background-attachment" property is used to fix the background in place.*/
+/* The "to right" segment indicates the direction of the gradient, which can also be set to "to left", "to top", or "to bottom".*/
+/* Gradients can also be applied to other elements, such as divs, images, and buttons.*/
+/* The following is a demonstration on how a gradient can be applied to a button in CSS coding.*/
+#button0 {
+    background: linear-gradient(to bottom, blue,purple)
+}    
+/* The following is a demonstration on how to properly employ images as backgrounds in CSS coding.*/
+/* Images can be applied as backgrounds to different textual elements in an HTML document through the usage of a specific structure and property built into a CSS stylesheet.*/
+#h2 {
+    font-size: 100px;
+    height: auto;
+    width: auto;
+    color: skyblue;
+    background-image: url(Images/Test\ Background.PNG)
+}
+/* In the given example, the "background-image" property is used to apply an image as a background to the h2 element.*/
+/* The "url" function is used to specify the location of the image, which can be a local file or a remote URL.*/
+/* The "height" and "width" properties are used to set the dimensions of the element, and the "color" property is used to set the color of the text.*/
+
+/* The following is a demonstration on how to properly employ "boxes", "margins", and "padding", as well as other miscellaneous positioning/structuring elements in CSS coding.*/
+/* "Box" refers to a type of "id" tag that is used to select a specific textual element in an HTML document, to only then have different properties applied to it.*/
+/* In the following demonstration, a paragraph with a "box" ID tag will be selected, and different properties will be applied to it.*/
+#boxalpha {
+    border: 5px, solid, black; /* The border property is used to apply a border to the box element. Note how multiple properties are applied to the border at the very same time.*/
+    border-radius: 5px;
+    width: 300px; /* The width property is used to set the width of the paragraph element.*/
+    font-size: medium; /* The font-size property is used to set the size of the text in the paragraph element.*/
+    font-family: Arial, sans-serif; /* The font-family property is used to set the font of the paragraph element.*/
+    padding: 30px; /* The padding property is used to add space between the content of the element and its border.*/
+    background: linear-gradient(to right, orange, red);
+}
+/* Such properties can also be applied to the body element of our document, which is the broadest one present.*/
+body {
+    margin: 5px; /* The margin property is used to set the space around the element. Not the space between an element and its contents.*/
+    border: 2px, solid, black; /* The border property is used to apply a border to the body element. Note how multiple properties are applied to the border at the very same time.*/
+    border-radius: 5px;
+}
+/* See how the "margin" property can also be applied to another box element. This time, "boxbeta" will be used.*/
+#boxbeta {
+    margin: 50px; /* The margin can be applied to the box element either through pixels, or through a "percentage" of space of the tab used.*/
+}
+/* We will now add further details to "boxbeta".*/
+#boxbeta {
+    border: 5px, solid, black;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: linear-gradient(to bottom, orange, blue);
+}
+/* The "margin" property can also be be applied at specific directions/orientations, such as "margin-top", "margin-right", "margin-bottom", and "margin-left".*/
+/* What follows is an example of how to apply the "margin" property to a specific direction, using a new paragraph with the "id" tag "boxgamma".*/
+#boxgamma {
+    margin-top: 50px; /* The margin-top property is used to set the space above the element.*/
+    margin-right: 50px; /* The margin-right property is used to set the space to the right of the element.*/
+    margin-bottom: 50px; /* The margin-bottom property is used to set the space below the element.*/
+    margin-left: 50px; /* The margin-left property is used to set the space to the left of the element.*/
+}
+/* We will now add further details to "boxgamma".*/
+#boxgamma {
+    border: 5px, solid, black;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: linear-gradient(to right, green, blue);
+}
+/* We will now demonstrate how to use percentages in margins, as a means to create margins that are capable of dynamically adjusting as an opened tab/window adjusts itself.*/
+/* It is preferable to use percentages in margins due to their responsibe and adjustable nature, which margins with fixed values DO NOT HAVE.*/
+#boxgamma {
+    margin-left: auto; /* The margin-left property is used to set the space to the left of the element, in this case, it is automatically adjusted, but specific percentages could have been utilized.*/
+    margin-right: auto; /* The margin-right property is used to set the space to the right of the element, in this case, it is automatically adjusted, but specific percentages could have been used.*/
+}
+/* It can now be seen that through this clever usage of definitions, the margins of the box can be adjusted and will remain centered in the page, regardless of circumstances.*/
+/* More details will be added to "boxgamma"*/
+#boxgamma {
+    border: 5px solid black; /* The border property is used to apply a border to the box element. Note how multiple properties are applied to the border at the very same time.*/
+    border-radius: 5px;
+    font-size: medium;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: linear-gradient(to right, green, blue);
+    width: 500px;
+    text-align: center; /* The text-align property is used to set the alignment of the text in the element. In this case, it is centered.*/
+}
+
+/* The following is a demonstration on how to properly employ the positioning of elements in CSS Coding.*/
+/* For demonstrative purposes, "divs" representing boxes will be used to demonstrate the different circumstances under which positioning can be used, and their intricacies.*/
+/* Let us fetch "box1", which will be used to demonstrate the "static" positioning of elements in CSS coding.*/
+#box1 {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: sienna;
+}
+/* The "static" positioning is the default positioning of elements in CSS coding. It means that the element will be positioned according to the normal flow of the document, and it will not be affected by any other elements.*/
+/* Example:*/
+#box1 {
+    position: static /*It means that the box will remain in its original position, not being affected by any other elements of the document.*/
+}
+/* The "relative" positioning is used to position an element relative to its original position in the document. It means that the element will be positioned according to the normal flow of the document, but it can be moved from its original position by using the "top", "right", "bottom", and "left" properties.*/
+/* Example:*/
+#box2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    
+    position: relative;
+    top: 100px; /* The top property is used to move the element down from its original position.*/
+    left: 100px; /* The left property is used to move the element to the right from its original position.*/
+    right: 50px; /* The right property is used to move the element to the left from its original position.*/
+    bottom: 50px; /* The bottom property is used to move the element up from its original position.*/
+}
+/* As perceived, with a point of origin on the top left corner of the box, the box is moved down 100 pixels, to the right 100 pixels, to the left 50 pixels, and up 50 pixels.*/
+/* The "absolute" positioning is used to position an element relative to its closest positioned ancestor. It means that the element will be removed from the normal flow of the document, and it will be positioned according to the "top", "right", "bottom", and "left" properties.*/
+/* This process can be exemplified by adding a box inside another box. The inner box will be positioned relative to the outer box, which is positioned relatively.*/
+/* Example:*/
+#box3 {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+
+    
+    position: absolute; /* The absolute positioning is used to position the element relative to its closest positioned ancestor.*/
+    top: 50px;
+    left: 50px;
+}    
+#box4 {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+
+    position: relative; /* The relative positioning is used to position the element relative to its original position.*/
+    top: 300px;
+}
+/* It can now be perceived that "box3" is positioned relative to "box4", which is positioned relatively.*/
+/* Conclusively, it can be stated that "box3" is permanently annexed to and centered within "box4", regardless of the position of "box4".*/
+/* We will now demonstrate the "sticky" positioning of elements in CSS coding.*/
+/* The "sticky" positioning is used to position an element relative to its closest ancestor that has a "scrolling" property. It means that the element will be positioned according to the normal flow of the document, but it will be "stuck" to the top of the viewport when it is scrolled past.*/
+/* Example:*/
+#p5 {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    top: 200px;
+}
+#box5 {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+
+    position: sticky; /* The sticky positioning is used to position the element relative to its closest ancestor that has a scrolling property.*/
+    top: 0; /* The top property is used to set the distance from the top of the viewport when the element is "stuck".*/
+    bottom: 0; /* The bottom property is used to set the distance from the bottom of the viewport when the element is "stuck".*/
+}
+/* As it might be observed, the pink square will now remain either stuck to the top or bottom of the viewport, depending on the scrolling direction.*/
+
+/*The following is a demonstration of and an explanation on "pseudo-classes" and "pseudo-elements" in CSS coding.*/
+/* Pseudo-classes serve as "conditions" of sorts, to trigger specific changes and properties based on circumstances.*/
+/* For example, the "hover" pseudo-class is used to apply styles to an element when the user hovers over it with their mouse.*/
+/* A demonstration of different pseudo-classes will be made with the button below.*/
+#button2 {
+    background: linear-gradient(blue, powderblue);
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+
+    position: relative;
+    top: 200px;
+}
+/* Above, is the standard kit for customizing the button in CSS coding;*/
+/* The following is a demonstration of the "hover" pseudo-class, which is used to apply styles to an element when the user hovers over it with their mouse.*/
+#button2:hover {
+    background: linear-gradient(purple, pink);
+    color: white;
+}
+/* The following is a demonstration of the "active" pseudo-class, which is used to apply styles to an element when the user clicks on it.*/
+#button2:active {
+    background: linear-gradient(red, orange);
+    color: black;
+}
+
+/* We will now demonstrate the proper employment of "shadows" in CSS coding, by virtue of some sample text.*/
+#headeralpha {
+    font-size: 60px;
+    color: black;
+    width: fit-content;
+
+    padding-left: 30px;
+}
+/* Shadows operate with three primary values: "horizontal offset", "vertical offset", and "blur radius".*/
+/* The "horizontal offset" is the distance of the shadow from the left or right side of the element, the "vertical offset" is the distance of the shadow from the top or bottom side of the element, and the "blur radius" is the amount of blur applied to the shadow.*/
+/* In the context of the "Horizontal Offset", a positive value will move the shadow to the right, while a negative value will move it to the left.*/
+/* In the context of the "Vertical Offset", a positive value will move the shadow down, while a negative value will move it up.*/
+/* The "blur radius" is the amount of blur applied to the shadow, and it can be set to any value.*/
+/* Returning to the headeralpha, we will now apply a shadow to it.*/
+#headeralpha {
+    text-shadow: 0px 0px 5px rgb(32, 32, 32);
+}
+/* In the document, it can now be perceived that the headeralpha has a shadow applied to it.*/
+/* We may also apply shadows to other elements, and to the box of the paragraph itself.*/
+/* For the purposes of demonstration, a different header - "headerbeta" - will be used.*/
+#headerbeta {
+    font-size: 60px;
+    color: black;
+    width: 200px;
+
+    padding-left: 30px;
+    position: relative;
+    left: 100px;
+}
+#headerbeta {
+    text-shadow: 2px 2px 5px rgb(32, 32, 32);
+    box-shadow: 5px 5px 10px rgb(32, 32, 32);
+}
+/* In the document, it can now be perceived that the headerbeta has a shadow applied to it, as well as a box shadow applied to the box of the paragraph itself.*/
+/* The shadows can be triggered by specific conditions, through the usage of pseudo-classes, such as "hover" and "active".*/
+/* The following is a demonstration of the "hover" pseudo-class, and how it may be used to trigger a shadow on the headerbeta when the user hovers over it.*/
+#headergamma {
+    font-size: 60px;
+    color: black;
+    width: 200px;
+
+    padding-left: 30px;
+    position: relative;
+    left: 100px;
+}
+#headergamma:hover {
+    text-shadow: 2px 2px 5px rgb(32, 32, 32);
+    box-shadow: 5px 5px 10px rgb(32, 32, 32);
+}
+/* In the document, it can now be perceived that the headergamma has a shadow applied to it when the user hovers over it.*/
+/* It is worth noting that shadows can bear any color selectable through the conventional color selection mechanisms available to VSCode.*/
+
+/* The following is a demonstration on how to properly employ "transformations" in CSS coding.*/
+/* Transformations can be employed to apply a variety of different effects to different elements in a document.*/
+/* Many different types of transformations exist, and they may all be applied simultaneously. They are, as follows:*/
+/* 1- "translate": This transformation is used to move an element from its original position. It can be used to move an element in any direction, and it can be applied to any element in a document.*/
+/* 2- "rotate": This transformation is used to rotate an element around a specific point. It can be used to rotate an element in any direction, and it can be applied to any element in a document.*/
+/* 3- "scale": This transformation is used to resize an element. It can be used to make an element larger or smaller, and it can be applied to any element in a document.*/
+/* 4- "skew": This transformation is used to skew an element. It can be used to skew an element in any direction, and it can be applied to any element in a document.*/
+/* 5- "perspective": This transformation is used to apply a perspective effect to an element. It can be used to create a 3D effect, and it can be applied to any element in a document.*/
+/* "Matrixes" are also used, and represent a type of transformation that encompasses all of the previously mentioned values into a singular simplified, model. Its structure is as follows:*/
+/* matrix(a, b, c, d, e, f) */
+/* Where "a" and "d" are the scale values, "b" and "c" are the skew values, and "e" and "f" are the translate values.*/
+/* For demonstrative purposes, we will use a div with the id "box10" to demonstrate how different transformation effects can be applied simultaneously to a singular element of a document:*/
+/* First, however, let us appropriately characterize "box10"*/
+#box10 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+}
+/* Now, we will apply the transformations to "box10"*/
+#box10 {
+    transform: translate(50px, 50px) rotate(45deg) scale(1.5) skew(20deg, 20deg);
+    /* The translate transformation is used to move the element 50 pixels to the right and 50 pixels down from its original position.*/
+    /* The rotate transformation is used to rotate the element 45 degrees clockwise.*/
+    /* The scale transformation is used to resize the element to 1.5 times its original size.*/
+    /* The skew transformation is used to skew the element 20 degrees horizontally and vertically.*/
+}
+/* It can now be perceived that the box has been transformed according to the specified transformations.*/
+/* It is worth keeping in mind that transformations can be applied to ANY element in a document, by virtue of CSS coding.*/
+/* To conclude this segment, we will demonstrate how a "matrix" can be used to apply the same aforemenetioned transformations in a much simpler structure:*/
+#box11 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;      /* Adjust as needed */
+    text-align: center;
+    overflow: hidden;    /* Prevents text from spilling out */
+    /* Remove or adjust transform as needed */
+    /* transform: matrix(1.5, 0, 0, 1.5, 50, 500); */
+}
+
+/* The following is a demonstration on how to appropriately employ "animations" in CSS coding.*/
+/* Animations can be used to create a variety of different effects in a document. They can be used to create transitions, movements, and other effects.*/
+/* Animations can be applied to any element in a document, and they can be triggered by specific conditions, such as "hover" or "active".*/
+/* Animations exist in different types, and they are, as follows, and demonstrated below:*/
+/*First, however, let us appropriately characterize "box12", which will be used to demonstrate a slide animation.*/
+#box12 {
+    font-size: 150px;
+    color: black;
+    text-align: center;
+    text-overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+
+    animation-name: slide; /* The name of the animation to be applied to the element.*/
+    animation-duration: 2s; /* The duration of the animation, in seconds.*/
+    animation-timing-function: ease-in-out; /* The timing function of the animation, which determines how the animation progresses over time.*/
+    animation-iteration-count: infinite; /* The number of times the animation will be repeated. "infinite" means that the animation will repeat indefinitely.*/
+    animation-direction: alternate; /* The direction of the animation, which determines whether the animation will play forwards or backwards. "alternate" means that the animation will play forwards and then backwards, repeating indefinitely.*/
+}
+/* Below, is the "@keyframes" component, which is used to define the animation. Particularly, the points of beginning and end are specified, as a means to structure it in conjunction with the description above, in the standard CSS structure associated with "box12".*/
+@keyframes slide {
+    from { transform: translateX(10px);}
+    to { transform: translateX(500px);}
+}
+/* Now, it can be perceived that the box has been animated according to what has been programmed. It slides from one side, to another, indefinitely, with the set speed/duration of cycle.*/
+/* The following is a demonstration of a "fade" animation, which will be applied to a new box with the id "box13".*/
+#box13 {
+    font-size: 150px;
+    color: black;
+    text-align: center;
+    text-overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+
+    animation-name: fade; /* The name of the animation to be applied to the element.*/
+    animation-duration: 5s; /* The duration of the animation, in seconds.*/
+    animation-timing-function: ease-in-out; /* The timing function of the animation, which determines how the animation progresses over time.*/
+    animation-iteration-count: infinite; /* The number of times the animation will be repeated. "infinite" means that the animation will repeat indefinitely.*/
+    animation-direction: alternate; /* The direction of the animation, which determines whether the animation will play forwards or backwards. "alternate" means that the animation will play forwards and then backwards, repeating indefinitely.*/
+}
+/* Above, is the structure responsible for stylizing "box13", which, is associated with the "fade" animation and the "@Keyframes" component below, which is crucial to its operation.*/
+@keyframes fade {
+    from { opacity: 1; } /* The starting point of the animation, with full opacity.*/
+    to { opacity: 0; } /* The ending point of the animation, with no opacity.*/
+}
+/* Now, it can be perceived that the box has been animated according to what has been programmed. It fades in and out, indefinitely, with the set speed/duration of cycle.*/
+
+/* This is all, for now. It is worth noting that this document, though a somewhat substantial itnroduction to CSS coding, remains incomplete. It is my personal recommendation that, should doubts arise while developing your demonstrative project, you seek to find answers through the usage of online resources or interactive AI assistants, such as "Copilot" itself, or ChatGPT.*/
+
+
+
+
+
+
