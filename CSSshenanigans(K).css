@@ -1,0 +1,381 @@
+/* <!--Why aren't you rendering?--> */
+
+#headeralpha {
+    font-size: 33px;
+    color: black;
+    text-align: left;
+    font-family: 'Arial', Courier, monospace;
+    position: relative;
+    top: 10px;
+    left: 115px;
+
+}
+
+#box1 {
+    z-index: 12;
+    
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) ;
+    border: 2px solid black;
+    width: 107px;
+    height: 107px;
+    background-color: white;
+    position: absolute;
+    border-radius: 30px;
+    transform: translateY(-90px) translateX(-10px) scale(0.8)
+}
+
+#box1:hover {
+    transform: translateY(-90px) translateX(-10px) scale(0.95);
+}
+
+
+#line1, #line2, #line3 {
+    position: absolute;     /*Bernardo here, I am testing some structure changes*/
+    width: 70px;
+    height: 3px;
+    background-color: black;
+    left: 19px;
+    border-radius: 3px;
+    
+}
+
+#line1 { top: 35px;}
+#line2 { top: 55px;}
+#line3 { top: 75px;}
+
+#left-border-box {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 170px;   /* Adjust width as needed */
+    height: 100vh;
+    border-right: 2px solid black;
+    background: transparent;
+    z-index: 0; /* Behind everything else */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Start hidden off-screen */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#left-border-box.visible {
+    transform: translateX(0); /* Slide into view */
+}
+
+#top-border-box {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100vw; /* Full width of the viewport */
+    height: 110px; /* Adjust height as needed */
+    border-bottom: 2px solid black;
+    background: transparent;
+    z-index: 11; /* Lower than header and box1 */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+#line4 {
+    left: 9px;
+    top: 80px;
+
+}
+
+#line5 {
+    left: 9px;
+    top: 350px;
+}
+
+#line6 {
+    left: 9px;
+    top: 240px;
+
+}
+
+#line4, #line5, #line6, #line7 {
+    background-color: grey;
+    border-color: grey;
+    border-radius: 0px;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+
+}
+
+#historybutton, #culturebutton, #projectbutton, #aboutusbutton, #referencesbutton {
+    transition: background-color 0.4s, color 0.4s; /* Smooth transition */;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: rgb(49, 48, 48);
+    font-size: 20px;
+    position: absolute
+
+}
+
+#historybutton:hover, #culturebutton:hover, #projectbutton:hover, #aboutusbutton:hover, #referencesbutton:hover {
+    background-color: rgb(124, 120, 120); /* Or your desired hover color */
+    color: rgb(0, 0, 0); /* Optional: change text color on hover */
+}
+
+#historybutton:active, #culturebutton:active, #projectbutton:active, #aboutusbutton:active, #referencesbutton:active {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: rgb(124, 120, 120); /* Or your desired hover color */
+    color: rgb(0, 0, 0); /* Optional: change text color on hover */
+}
+
+#historybutton {
+    top: 105px;
+    left: 15%;
+}
+
+#culturebutton {
+    top: 145px; /*Difference of 40 pixels for spacing*/
+    left: 15%;
+
+}
+
+#projectbutton {
+    top: 185px;
+    left: 15%;
+
+}
+
+#aboutusbutton {
+    top: 265px;
+    left: 15%;
+
+}
+
+#referencesbutton {
+    top: 305px;
+    left: 15%;
+
+}
+
+.left_border_button {
+    cursor: pointer;
+}
+
+#midwestimage {
+    position: absolute;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    left: 500px; /* Adjust as needed */
+    top: 200px; /* Adjust as needed */
+    width: 20%; /* Example width */
+    }
+
+#northimage {
+    position: absolute;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    left: 45px; /* Adjust as needed */
+    top: 228px; /* Adjust as needed */
+    width: 100%; /* Example width */
+    }
+
+#northeastimage {
+    position: absolute;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    left: 50px; /* Adjust as needed */
+    top: 345px; /* Adjust as needed */
+    width: 20%; /* Example width */
+    }
+
+#southimage {
+    position: absolute;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    left: 580px; /* Adjust as needed */
+    top: 410px; /* Adjust as needed */
+    width: 17%; /* Example width */
+    }
+
+#southeastimage {
+    border-width: 20px;
+    border-style: solid;
+    border-color: black;
+    border-image-source: url('southeast.png');
+    border-image-slice: 20;
+    border-image-repeat: round;
+    position: absolute;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    left: 720px; /* Adjust as needed */
+    top: 400px; /* Adjust as needed */
+    width: 16%; /* Example width */
+    }
+
+
+/*-- transform: scale(xpercentage) - used to escalate the image */
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#filterbox.filter-component {
+    position: absolute;
+    top: 30px;
+    right: 400px;
+    width: 140px;
+    height: 44px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    z-index: 30;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    user-select: none;
+}
+
+.filter-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
+}
+
+.filter-label {
+
+    flex: 1;
+    color: #555;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    width: 100%;
+    background: white;
+    border-radius: 0 0  16px 16px;
+    box-shadow: 0 8px 24px;
+    flex-direction: column;
+    z-index: 30;
+    padding: 8px 0;
+
+}
+
+.filter-dropdown-item {
+    padding: 12px 30px; 
+    color: #333;
+    text-decoration: none; 
+    font-size: 18px;
+    transition: background 0.2s;
+    display: block;
+
+}
+
+.filter-dropdown-item:hover {
+
+    background: #f0f0f0;
+}
+
+.filter-dropdown.open {
+    display: flex;
+}
+
+
+#brazilmap {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Adjust as needed */
+    /* Optional: add a max-width or max-height if needed */
+}
+
+#svg-map a.north path,
+#svg-map a.north .circle { fill: #2ecc40 !important; }
+#svg-map a.north:hover path,
+#svg-map a.north:hover .circle { fill: #127a1f !important; }
+
+#svg-map a.northeast path,
+#svg-map a.northeast .circle { fill: #ff9800 !important; }
+#svg-map a.northeast:hover path,
+#svg-map a.northeast:hover .circle { fill: #bb7c1d !important; }
+
+#svg-map a.mid-west path,
+#svg-map a.mid-west .circle { fill: #328032 !important; }
+#svg-map a.mid-west:hover path,
+#svg-map a.mid-west:hover .circle { fill: #074b07 !important; }
+
+#svg-map a.southeast path,
+#svg-map a.southeast .circle { fill: #2196f3 !important; }
+#svg-map a.southeast:hover path,
+#svg-map a.southeast:hover .circle { fill: #1568ac !important; }
+
+#svg-map a.south path,
+#svg-map a.south .circle { fill: #9c27b0 !important; }
+#svg-map a.south:hover path,
+#svg-map a.south:hover .circle { fill: #540d61 !important; }
+
+#svg-map path,
+#svg-map .circle {
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#region-legend {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255,255,255,0.95); /* Optional: subtle background */
+    border-radius: 10px;                 /* Optional: rounded corners */
+    box-shadow: 0 2px 12px rgba(0,0,0); /* Optional: soft shadow */
+    padding: 16px 20px;                  /* Optional: padding for spacing */
+    margin: 0;                           /* Remove margin if present */
+    z-index: 50;                         /* Make sure it's above most elements */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.legend-cube {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #222;
+    margin-right: 6px;
+}
+
+.legend-cube.north { background: #2ecc40; }
+.legend-cube.northeast { background: #ff9800; }
+.legend-cube.midwest { background: #f5deb3; }
+.legend-cube.southeast { background: #2196f3; }
+.legend-cube.south { background: #9c27b0; }
