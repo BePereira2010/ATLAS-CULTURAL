@@ -590,14 +590,14 @@ html, body {
   margin-left: 0;           /* No horizontal offset */
   margin-top: 0.3em;        /* Small gap from image */
   line-height: 1.3;
-  font-family: inherit;
+  font-family: Arial, sans-serif;
 }
 @media (max-width: 830px) {
   #slideshow-legend {
     left: 8px;
     bottom: 8px;
     max-width: 90vw;
-    font-size: 0.96em;
+    font-size: 0.90em;
     padding: 6px 10px;
   }
 }
