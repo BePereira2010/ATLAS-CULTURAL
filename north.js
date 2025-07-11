@@ -23,14 +23,6 @@ const facts = [
     "A gruta mais profunda do mundo é o Abismo Guy Collet (AM), com 671m, localizada no Amazonas, no município de Barcelos.",
     "A cidade de Belém, no Pará, é conhecida como a 'metrópole da Amazônia' e possui o maior mercado ao ar livre da América Latina, o Ver-o-Peso.",
     "O estado de Roraima abriga o Monte Roraima, um dos pontos mais altos do Brasil, com cerca de 2.875 metros de altitude, e que inspirou o romance 'O Mundo Perdido' de Arthur Conan Doyle.",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-
-
 
 ];
 
