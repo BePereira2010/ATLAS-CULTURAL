@@ -4,7 +4,7 @@ const facts = [
     "O Centro-Oeste concentra grande parte da produção de grãos do Brasil.",
     "O Cerrado é o segundo maior bioma brasileiro.",
     "A Festa do Divino é uma das principais manifestações culturais da região.",
-    "A cidade de Goiás foi Patrimônio Mundial da UNESCO em 2001.",
+    "A cidade de Goiás, localizada na unidade federativa de mesmo nome, foi Patrimônio Mundial da UNESCO em 2001.",
     "Brasília é a única cidade do século XX reconhecida como Patrimônio Mundial da UNESCO (1987).",
     "O Cerrado, bioma predominante na região, abriga 5% da biodiversidade mundial.",
     "O Parque Nacional da Chapada dos Veadeiros (GO) possui formações rochosas de mais de 1 bilhão de anos.",
