@@ -6,7 +6,7 @@ const facts = [
     "O café foi responsável pelo crescimento das cidades do Sudeste no século XIX.",
     "A Serra do Espinhaço, em Minas Gerais, é Patrimônio Mundial da UNESCO.",
     "O Sudeste possui importantes centros culturais e museus reconhecidos internacionalmente.",
-    "O Sudeste abriga o ponto mais alto do Brasil, o Pico da Neblina (2.994m), localizado no estado do Rio de Janeiro, na Serra do Imeri (fronteira com AM).",
+    "O Sudeste abriga o ponto mais alto do Brasil, o Pico da Neblina (2.994m), localizado no estado do Rio de Janeiro, na Serra do Imeri.",
     "O Rio Doce, que banha Minas Gerais e Espírito Santo, possui a maior bacia hidrográfica inteiramente dentro do Sudeste.",
     "O Vale do Ribeira, entre SP e PR, contém o maior contínuo de Mata Atlântica preservada do Brasil.",
     "O estado de São Paulo possui a maior população absoluta e a maior densidade demográfica entre os estados brasileiros.",
