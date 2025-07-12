@@ -69,7 +69,8 @@ body {
 
 .region-back-btn {
   display: inline-block;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.7em 1.7em;
   border-radius: 12px;
   border: 1.7px solid var(--accent-dark);
